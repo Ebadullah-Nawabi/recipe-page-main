@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5% = 10px of 16px */
+  font-size: 62.5%;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+
+.heading-primary {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: hsl(24, 5%, 18%);
+}
+
+.heading-secondary {
+  color: hsl(14, 45%, 36%);
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+body {
+  font-family: "Outfir", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+  margin: 5rem 0;
+  width: 30%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 11px;
+}
+
+.all-else {
+  padding: 2rem;
+}
+
+.image-box {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.heading-text {
+  margin-bottom: 1.6rem;
+}
+
+.preparation-details {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 7px;
+  padding: 1.6rem 1rem;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 1.8rem;
+}
+
+.heading-tertiary {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.preparation-list {
+  margin-left: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.preparation-text {
+  margin-bottom: 1rem;
+  padding-left: 0.6rem;
+}
+
+.preparation-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.preparation-text::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.preparation-str {
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients-details {
+  padding-bottom: 1.8rem;
+  border-bottom: 0.2px solid hsl(30, 10%, 34%, 0.2);
+  margin-bottom: 1.8rem;
+}
+
+.ingredients-list {
+  margin-left: 1.6rem;
+  font-size: 1.1rem;
+  color: hsl(30, 10%, 34%);
+}
+
+.ingredients-text {
+  margin-bottom: 0.8rem;
+  padding-left: 0.6rem;
+}
+
+.ingredients-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.ingredients-text::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions-details {
+  margin-bottom: 1.8rem;
+  border-bottom: 0.2px solid hsl(30, 10%, 34%, 0.2);
+  padding-bottom: 1.8rem;
+}
+
+.instructions-list {
+  margin-left: 1.6rem;
+  font-size: 1.1rem;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.4;
+}
+
+.instructions-text {
+  margin-bottom: 0.6rem;
+  padding-left: 0.6rem;
+}
+
+.instructions-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.instructions-text::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.nutrition-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+}
+
+.name {
+  padding: 1rem;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-bottom: 0.2px solid hsl(30, 10%, 34%, 0.2);
+}
+
+.quantity {
+  padding: 1rem;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  border-bottom: 0.2px solid hsl(30, 10%, 34%, 0.2);
+}
+
+.last-elmt {
+  border-bottom: none;
+}
+
+@media (max-width: 544px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .image-box {
+    border-radius: 0;
+    overflow: visible;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .img {
+    border-radius: 0;
+  }
+}
